@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'StringSwitch_Example' do
+  pod 'StringSwitch', :path => '../'
+
+  target 'StringSwitch_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
