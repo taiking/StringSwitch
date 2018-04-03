@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import StringSwitch
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var stringSwitch: StringSwitch!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        stringSwitch.selectedStringColor = .white
+        stringSwitch.notSelectedStringColor = .black
+        
+        stringSwitch.selectedBackgroundColor = .black
+        stringSwitch.notSelectedBackgroundColor = .white
+        
+        stringSwitch.rightString = NSAttributedString(string: "ON")
+        stringSwitch.leftString = NSAttributedString(string: "Off")
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 }
 

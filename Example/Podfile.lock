@@ -1,0 +1,16 @@
+PODS:
+  - StringSwitch (0.1.0)
+
+DEPENDENCIES:
+  - StringSwitch (from `../`)
+
+EXTERNAL SOURCES:
+  StringSwitch:
+    :path: ../
+
+SPEC CHECKSUMS:
+  StringSwitch: f86a04b11d0a9269538efc07be9d2c8007e9695c
+
+PODFILE CHECKSUM: 1d2e8f9550904ecb9e35cae082b1e234f0ecb016
+
+COCOAPODS: 1.4.0
