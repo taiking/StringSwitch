@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         stringSwitch.notSelectedStringColor = .black
         
         stringSwitch.selectedBackgroundColor = .black
-        stringSwitch.notSelectedBackgroundColor = .white
+        stringSwitch.notSelectedBackgroundColor = .yellow
         
         stringSwitch.rightString = NSAttributedString(string: "ON")
         stringSwitch.leftString = NSAttributedString(string: "Off")
