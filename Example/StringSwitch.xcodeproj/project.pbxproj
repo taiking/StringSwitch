@@ -14,6 +14,11 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D8D017F420749E0B0075AC3C /* StringSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D017EB20749E0B0075AC3C /* StringSwitch.framework */; };
+		D8D017FB20749E0B0075AC3C /* StringSwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D017FA20749E0B0075AC3C /* StringSwitchTests.swift */; };
+		D8D017FD20749E0B0075AC3C /* StringSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D017ED20749E0B0075AC3C /* StringSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8D0180020749E0B0075AC3C /* StringSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D017EB20749E0B0075AC3C /* StringSwitch.framework */; };
+		D8D0180120749E0B0075AC3C /* StringSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D8D017EB20749E0B0075AC3C /* StringSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DB0A96C4152421794A74D394 /* Pods_StringSwitch_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD27B7BD24AC4E5C16ADC81 /* Pods_StringSwitch_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +30,46 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = StringSwitch;
 		};
+		D8D017F520749E0B0075AC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D017EA20749E0B0075AC3C;
+			remoteInfo = StringSwitch;
+		};
+		D8D017F720749E0B0075AC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = StringSwitch_Example;
+		};
+		D8D017FE20749E0B0075AC3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D017EA20749E0B0075AC3C;
+			remoteInfo = StringSwitch;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8D0180720749E0B0075AC3C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D8D0180120749E0B0075AC3C /* StringSwitch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A3A3F0DF301C890407C2EAB /* Pods-StringSwitch_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringSwitch_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringSwitch_Example/Pods-StringSwitch_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0C99CFDCC39F1157FBEABF5C /* StringSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = StringSwitch.podspec; path = ../StringSwitch.podspec; sourceTree = "<group>"; };
+		0C99CFDCC39F1157FBEABF5C /* StringSwitch.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StringSwitch.podspec; path = ../StringSwitch.podspec; sourceTree = "<group>"; };
 		11D45EEC024175A559EFE9F9 /* Pods-StringSwitch_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringSwitch_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-StringSwitch_Example/Pods-StringSwitch_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5F1909B3AF68930A08A860F8 /* Pods-StringSwitch_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringSwitch_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StringSwitch_Tests/Pods-StringSwitch_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* StringSwitch_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringSwitch_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +82,17 @@
 		607FACE51AFB9204008FA782 /* StringSwitch_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringSwitch_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		77A124784BB7181709AD76CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		77A124784BB7181709AD76CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8DA892BCC8B835F99D95AA58 /* Pods_StringSwitch_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringSwitch_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD27B7BD24AC4E5C16ADC81 /* Pods_StringSwitch_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StringSwitch_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3B14C760CF22B149613FE9 /* Pods-StringSwitch_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringSwitch_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StringSwitch_Tests/Pods-StringSwitch_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E5D8461CC9551143A8A2F048 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D8D017EB20749E0B0075AC3C /* StringSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StringSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D017ED20749E0B0075AC3C /* StringSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringSwitch.h; sourceTree = "<group>"; };
+		D8D017EE20749E0B0075AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8D017F320749E0B0075AC3C /* StringSwitchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringSwitchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D017FA20749E0B0075AC3C /* StringSwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSwitchTests.swift; sourceTree = "<group>"; };
+		D8D017FC20749E0B0075AC3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D8461CC9551143A8A2F048 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BD2AD61D3FBA09015496A5 /* Pods_StringSwitch_Example.framework in Frameworks */,
+				D8D0180020749E0B0075AC3C /* StringSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +110,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB0A96C4152421794A74D394 /* Pods_StringSwitch_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D017E720749E0B0075AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D017F020749E0B0075AC3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D017F420749E0B0075AC3C /* StringSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +146,8 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for StringSwitch */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				D8D017EC20749E0B0075AC3C /* StringSwitch */,
+				D8D017F920749E0B0075AC3C /* StringSwitchTests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				7EA17C2FAA3FDD75E7E115A4 /* Pods */,
 				0FFA59482409BFB1D1352782 /* Frameworks */,
@@ -95,6 +159,8 @@
 			children = (
 				607FACD01AFB9204008FA782 /* StringSwitch_Example.app */,
 				607FACE51AFB9204008FA782 /* StringSwitch_Tests.xctest */,
+				D8D017EB20749E0B0075AC3C /* StringSwitch.framework */,
+				D8D017F320749E0B0075AC3C /* StringSwitchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,7 +225,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D8D017EC20749E0B0075AC3C /* StringSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				D8D017ED20749E0B0075AC3C /* StringSwitch.h */,
+				D8D017EE20749E0B0075AC3C /* Info.plist */,
+			);
+			path = StringSwitch;
+			sourceTree = "<group>";
+		};
+		D8D017F920749E0B0075AC3C /* StringSwitchTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8D017FA20749E0B0075AC3C /* StringSwitchTests.swift */,
+				D8D017FC20749E0B0075AC3C /* Info.plist */,
+			);
+			path = StringSwitchTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8D017E820749E0B0075AC3C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D017FD20749E0B0075AC3C /* StringSwitch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		607FACCF1AFB9204008FA782 /* StringSwitch_Example */ = {
@@ -172,10 +267,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				B10778C5C1719EB1FFD90F7C /* [CP] Embed Pods Frameworks */,
 				30AB2D28842651AEE7D697B9 /* [CP] Copy Pods Resources */,
+				D8D0180720749E0B0075AC3C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D8D017FF20749E0B0075AC3C /* PBXTargetDependency */,
 			);
 			name = StringSwitch_Example;
 			productName = StringSwitch;
@@ -203,13 +300,50 @@
 			productReference = 607FACE51AFB9204008FA782 /* StringSwitch_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D8D017EA20749E0B0075AC3C /* StringSwitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D0180620749E0B0075AC3C /* Build configuration list for PBXNativeTarget "StringSwitch" */;
+			buildPhases = (
+				D8D017E620749E0B0075AC3C /* Sources */,
+				D8D017E720749E0B0075AC3C /* Frameworks */,
+				D8D017E820749E0B0075AC3C /* Headers */,
+				D8D017E920749E0B0075AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StringSwitch;
+			productName = StringSwitch;
+			productReference = D8D017EB20749E0B0075AC3C /* StringSwitch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D8D017F220749E0B0075AC3C /* StringSwitchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D0180820749E0B0075AC3C /* Build configuration list for PBXNativeTarget "StringSwitchTests" */;
+			buildPhases = (
+				D8D017EF20749E0B0075AC3C /* Sources */,
+				D8D017F020749E0B0075AC3C /* Frameworks */,
+				D8D017F120749E0B0075AC3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D017F620749E0B0075AC3C /* PBXTargetDependency */,
+				D8D017F820749E0B0075AC3C /* PBXTargetDependency */,
+			);
+			name = StringSwitchTests;
+			productName = StringSwitchTests;
+			productReference = D8D017F320749E0B0075AC3C /* StringSwitchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -220,6 +354,15 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					D8D017EA20749E0B0075AC3C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D8D017F220749E0B0075AC3C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -239,6 +382,8 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* StringSwitch_Example */,
 				607FACE41AFB9204008FA782 /* StringSwitch_Tests */,
+				D8D017EA20749E0B0075AC3C /* StringSwitch */,
+				D8D017F220749E0B0075AC3C /* StringSwitchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +400,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D017E920749E0B0075AC3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D017F120749E0B0075AC3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -383,6 +542,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D8D017E620749E0B0075AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D017EF20749E0B0075AC3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D017FB20749E0B0075AC3C /* StringSwitchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -390,6 +564,21 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* StringSwitch_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		D8D017F620749E0B0075AC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D017EA20749E0B0075AC3C /* StringSwitch */;
+			targetProxy = D8D017F520749E0B0075AC3C /* PBXContainerItemProxy */;
+		};
+		D8D017F820749E0B0075AC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* StringSwitch_Example */;
+			targetProxy = D8D017F720749E0B0075AC3C /* PBXContainerItemProxy */;
+		};
+		D8D017FF20749E0B0075AC3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8D017EA20749E0B0075AC3C /* StringSwitch */;
+			targetProxy = D8D017FE20749E0B0075AC3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,6 +706,7 @@
 			baseConfigurationReference = 0A3A3F0DF301C890407C2EAB /* Pods-StringSwitch_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StringSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -532,6 +722,7 @@
 			baseConfigurationReference = 11D45EEC024175A559EFE9F9 /* Pods-StringSwitch_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = StringSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -580,6 +771,116 @@
 			};
 			name = Release;
 		};
+		D8D0180220749E0B0075AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StringSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.chocovayashi.StringSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D8D0180320749E0B0075AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StringSwitch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.chocovayashi.StringSwitch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8D0180420749E0B0075AC3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StringSwitchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.chocovayashi.StringSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringSwitch_Example.app/StringSwitch_Example";
+			};
+			name = Debug;
+		};
+		D8D0180520749E0B0075AC3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = StringSwitchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.chocovayashi.StringSwitchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StringSwitch_Example.app/StringSwitch_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -606,6 +907,24 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D0180620749E0B0075AC3C /* Build configuration list for PBXNativeTarget "StringSwitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D0180220749E0B0075AC3C /* Debug */,
+				D8D0180320749E0B0075AC3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D0180820749E0B0075AC3C /* Build configuration list for PBXNativeTarget "StringSwitchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D0180420749E0B0075AC3C /* Debug */,
+				D8D0180520749E0B0075AC3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
